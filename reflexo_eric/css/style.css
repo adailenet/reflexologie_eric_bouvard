@@ -1,0 +1,253 @@
+/* === BODY === */
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "Hanken";
+    font-weight: 400;
+    font-size: var(--main-font);
+    color: var(--clr-black);
+    background-color: var(--clr-creme);
+}
+
+/* === HEADER === */ 
+
+header {
+    position: relative;
+    width: 100%;
+    height: 130%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    background-image: url("../src/img/LOCAL2.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+/* === MENU === */
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo + mots sur une même ligne, alignés à gauche */
+    width: 100%;
+    padding: 1rem 2rem;
+    gap: 4rem; /* Espace entre logo et mots */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+#menu img {
+    width: 80px;
+    height: auto;
+}
+
+#noir_logo {
+    display: none;
+}
+
+#mots {
+    display: flex;
+    flex: 1; /* Les liens prennent toute la place dispo */
+    justify-content: space-evenly; /* Répartit les liens uniformément */
+    align-items: center;
+    font-weight: 500;
+    font-size: var(--font-nav);
+    color: var(--clr-creme);
+}
+
+#mots a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+}
+
+#mots a:hover {
+    opacity: 0.7;
+}
+
+
+/* === TITLE === */
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: var(--clr-creme);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+    user-select: none;
+}
+
+#title h1 {
+    font-family: 'Sarina';
+    font-size: 7rem;
+    margin-bottom: 1px;
+}
+
+#title h2 {
+    font-size: 1,5rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* === BODY === */ 
+
+.content {
+  margin: 80px auto;        /* marge haut/bas et centré horizontalement */
+  padding: 50px;            /* espace intérieur (blanc tournant) */
+}
+
+
+.eric-container {
+    max-width: 60%;
+    display: flex;
+    align-items: center;        /* vertical centering */
+    gap: 30px;                  /* space between image and text */
+    flex-wrap: wrap;            /* important for responsiveness */
+
+    padding: 30px;
+    margin: auto;
+}
+
+.eric-container h2 {
+    font-family: "Sarina";
+    font-size: var(--title-font);
+    margin-bottom: 20px;
+}
+
+#eric {
+    width: 230px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+
+}
+
+.texte-eric {
+    flex: 1;
+    min-width: 250px;
+}
+
+.buttons {
+    position: relative;;
+    margin: auto;
+    padding: 10%;
+    text-align: center;
+}
+
+.buttons a {
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+
+    border: 2px solid black;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+#btn_info {
+    margin-right: 20px;
+}
+
+#btn_rdv {
+    background-color: #c4bfa8;
+}
+
+#btn_info:hover, #btn_rdv:hover {
+    background-color: var(--clr-red);
+    color: var(--clr-creme);
+    border: 2px solid var(--clr-red);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* === FOOTER === */
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: var(--clr-creme);
+    border-top: 1px solid var(--clr-black);
+    user-select: none;
+}
+
+footer a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#mentions:hover {
+    text-decoration: underline;
+}
+
+/* Fenêtre masquée par défaut */
+#mentions-legales {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quand ciblée par le lien */
+#mentions-legales:target {
+  display: flex;
+}
+
+/* Contenu */
+.mentions-content {
+  position: relative;
+  background: #f8f1de;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Bouton croix */
+.close-mentions {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #7c3f3f;
+  text-decoration: none;
+  user-select: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close-mentions:hover {
+  color: #592c2c;
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+

@@ -1,0 +1,56 @@
+/* === FONTS === */
+@font-face {
+    font-family: 'Imbue';
+    src: url('../src/typo/Imbue_14pt-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Imbue';
+    src: url('../src/typo/Imbue_14pt-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/typo/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/typo/Poppins-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/typo/Poppins-Black.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/* === VARIABLES === */
+:root {
+    /* COLORS */
+    --clr-creme: #F6EFD2;
+    --clr-red: #BB6653;
+    --clr-black: #000000;
+    /* MARGES */ 
+    --main-margin: 20px;
+    --half-margin: 10px;
+    --large-margin: 40px;
+    /* TYPOS */ 
+    --main-font: 16px;
+    --font-nav: 18px;
+    --title-font: 30px;
+}
+
+/* === RESET === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

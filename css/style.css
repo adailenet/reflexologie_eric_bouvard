@@ -5,8 +5,9 @@ body {
     height: 100vh;
     margin: 0;
 
-    font-family: "Hanken";
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight:    400;
     font-size: var(--main-font);
     color: var(--clr-black);
     background-color: var(--clr-creme);
@@ -94,7 +95,8 @@ header {
 }
 
 #title h1 {
-    font-family: 'Sarina';
+    font-family: 'Imbue';
+    font-weight: 800;
     font-size: 7rem;
     margin-bottom: 1px;
 }
@@ -125,7 +127,7 @@ header {
 }
 
 .eric-container h2 {
-    font-family: "Sarina";
+    font-family: "Imbue";
     font-size: var(--title-font);
     margin-bottom: 20px;
 }
@@ -145,6 +147,7 @@ header {
 }
 
 .buttons {
+    font-family: "Poppins", sans-serif;
     position: relative;;
     margin: auto;
     padding: 10%;

@@ -1,0 +1,289 @@
+/* === BODY === */
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: var(--main-font);
+    color: var(--clr-black);
+    background-color: var(--clr-creme);
+}
+
+/* === HEADER === */ 
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    background-color: var(--clr-creme);
+}
+
+/* === MENU === */
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo + mots sur une même ligne, alignés à gauche */
+    width: 100%;
+    padding: 1rem 2rem;
+    gap: 4rem; /* Espace entre logo et mots */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+
+#menu img {
+    margin: 5%;
+    width: 80px;
+    height: auto;
+}
+
+#noir_logo {
+    display: block;
+}
+
+#creme_logo {
+    display: none;
+}
+
+#mots {
+    display: flex;
+    flex: 1; /* Les liens prennent toute la place dispo */
+    justify-content: space-evenly; /* Répartit les liens uniformément */
+    align-items: center;
+    font-weight: 500;
+    font-size: var(--font-nav);
+    color: var(--clr-noir);
+
+    text-decoration: none;
+}
+
+#mots a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+}
+
+#mots a:hover {
+    opacity: 0.4;
+    transition: opacity 0.3s;}
+
+
+/* INTRO */
+.intro {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+blockquote {
+  margin: 5rem auto;
+  text-align: center;
+  font-weight: bold;
+  max-width: 900px;
+}
+
+h1 {
+  font-family: "Imbue";
+  color: var(--clr-red);
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: "Imbue";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+blockquote {
+  font-weight: 800;
+  font-size: var(--font-nav);
+}
+
+/* DEFINITION */
+.definition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #c57a62;
+  color: var(--clr-black);
+  padding: 5rem 1.5rem;
+}
+
+.definition-img img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.definition-text {
+  max-width: 500px;
+  margin: 1rem;
+}
+
+/* CONSULTATION */
+.consultation {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.consultation h2 {
+  margin-bottom: 2rem;
+}
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.consultation-grid div {
+  display: flex;                /* <-- important */
+  justify-content: center;      /* centre horizontalement */
+  align-items: center;          /* centre verticalement */
+  text-align: center;           /* centre le texte sur plusieurs lignes */
+
+  padding: 1rem 1.25rem;
+  min-height: 100px;            /* ajuste selon ton design */
+  box-sizing: border-box;
+
+  font-weight: 400;
+  user-select: none;
+  cursor: pointer;
+
+  /* style visuel */
+  color: var(--clr-black);
+  background-image: linear-gradient(to right, #c57a62 0%, #F7BB97 51%, #F5D3C4 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #eee;
+}
+
+.consultation-grid div:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #7A7A73;
+  text-decoration: none;
+}
+         
+
+/* BUTTON */
+
+#button {
+  position: relative;
+  margin: 5rem auto;
+  padding: 5rem;
+  text-align: center;
+}
+
+#rendezvous{
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  background-color: #c4bfa8;
+
+  border: 2px solid black;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 400;
+  
+}
+
+#rendezvous:hover {
+  background-color: var(--clr-red);
+  color: var(--clr-creme);
+  border: 2px solid var(--clr-red);
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+
+
+/* === FOOTER === */
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: var(--clr-creme);
+    border-top: 1px solid var(--clr-black);
+    user-select: none;
+}
+
+footer a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#mentions:hover {
+    text-decoration: underline;
+}
+
+/* Fenêtre masquée par défaut */
+#mentions-legales {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quand ciblée par le lien */
+#mentions-legales:target {
+  display: flex;
+}
+
+/* Contenu */
+.mentions-content {
+  position: relative;
+  background: #f8f1de;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Bouton croix */
+.close-mentions {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #7c3f3f;
+  text-decoration: none;
+  user-select: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close-mentions:hover {
+  color: #592c2c;
+}

@@ -453,7 +453,7 @@ footer a {
   
   #mots a {
     padding: 0.25rem 0;
-    width: auto !important;
+    width: 100% !important;
     text-align: right;
   }
   
@@ -564,7 +564,7 @@ footer a {
   
   #mots {
     font-size: 14px;
-    gap: 0.75rem !important;
+    gap: 0.3rem !important;
   }
   
   .contact-section {

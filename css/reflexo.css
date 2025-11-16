@@ -288,25 +288,27 @@ footer a {
   color: #592c2c;
 }
 
-/* === MEDIA QUERIES RESPONSIVE POUR REFLEXO.HTML === */
+/* === MEDIA QUERIES RESPONSIVE POUR CONTACTS.HTML === */
+
 
 /* === RESPONSIVE POUR TRÈS GRANDS ÉCRANS (> 1400px) === */
 @media (min-width: 1400px) {
-  .intro {
-    max-width: 800px;
+  .contact-section h1 {
+    font-size: 6rem;
   }
   
-  blockquote {
-    max-width: 1100px;
-    font-size: 1.3rem;
+  .contact-card {
+    max-width: 900px;
+    padding: 3rem;
   }
   
-  .definition-text {
-    max-width: 600px;
+  .contact-label {
+    min-width: 180px;
+    font-size: 1.1rem;
   }
   
-  .consultation-grid {
-    max-width: 1100px;
+  .contact-info {
+    font-size: 1.1rem;
   }
 }
 
@@ -322,125 +324,96 @@ footer a {
     gap: 1.5rem !important;
   }
   
-  h1 {
+  .contact-section {
+    padding: 2.5rem 1rem 4rem;
+  }
+  
+  .contact-section h1 {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   
-  h2 {
-    font-size: 1.8rem;
+  .contact-card {
+    max-width: 650px;
+    padding: 1.8rem;
   }
   
-  .intro {
-    max-width: 85%;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
+  .contact-label {
+    min-width: 130px;
+    font-size: 0.95rem;
   }
   
-  blockquote {
-    margin: 3rem auto;
-    font-size: 1rem;
-    max-width: 85%;
+  .contact-info {
+    font-size: 0.95rem;
   }
   
-  .definition {
-    padding: 4rem 1.5rem;
-  }
-  
-  .definition-img img {
-    width: 250px;
-  }
-  
-  .definition-text {
-    max-width: 450px;
-  }
-  
-  .consultation {
-    margin: 4rem auto;
-    padding: 0 1.5rem;
-  }
-  
-  .consultation-grid {
-    max-width: 85%;
-    gap: 0.8rem;
-  }
-  
-  #button {
-    padding: 3rem;
+  .contact-row {
+    padding: 0.9rem 0;
   }
 }
 
 /* === RESPONSIVE POUR PETITES TABLETTES ET MOBILES (< 991px) === */
 @media (max-width: 991px) {
   #menu {
-    flex-direction: column;
+    flex-direction: row !important;
     align-items: flex-start;
     gap: 1.5rem !important;
     padding: 1rem;
+    justify-content: space-between !important;
   }
   
   #mots {
-    width: 100%;
+    width: auto !important;
     flex-direction: column;
-    gap: 1rem !important;
-    align-items: flex-start;
+    gap: 0.5rem !important;
+    align-items: flex-end !important;
     justify-content: flex-start !important;
   }
   
   #mots a {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    width: auto !important;
+    text-align: right;
+  }
+  
+  .contact-section {
+    padding: 2rem 1rem 3.5rem;
+  }
+  
+  .contact-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-card {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .contact-row {
+    flex-direction: column;
+    padding: 0.8rem 0;
+  }
+  
+  .contact-label {
+    margin-bottom: 0.5rem;
+    min-width: 100%;
+  }
+  
+  .contact-info {
     width: 100%;
   }
-  
-  h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+
+  .button {
+    padding: 5%;
   }
-  
-  h2 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  
-  .intro {
-    max-width: 90%;
-    text-align: center;
-  }
-  
-  blockquote {
-    margin: 2.5rem auto;
-    font-size: 0.95rem;
-    padding: 0 1rem;
-  }
-  
-  .definition {
-    flex-direction: column;
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  .definition-img img {
-    width: 280px;
-    margin-bottom: 1.5rem;
-  }
-  
-  .definition-text {
-    max-width: 90%;
-  }
-  
-  .consultation {
-    margin: 3rem auto;
-    padding: 0 1rem;
-  }
-  
-  .consultation-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-width: 90%;
-  }
-  
-  #button {
-    padding: 2rem;
+
+  #rendezvous {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 13px;
+    padding: 10px;
   }
 }
 
@@ -460,77 +433,33 @@ footer a {
     font-size: 15px;
   }
   
-  h1 {
+  .contact-section {
+    padding: 2rem 1rem 3rem;
+  }
+  
+  .contact-section h1 {
     font-size: 2.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
   
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .intro {
+  .contact-card {
     max-width: 95%;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
   }
   
-  .intro p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .contact-row {
+    padding: 0.75rem 0;
   }
   
-  blockquote {
-    margin: 2rem auto;
+  .contact-label {
     font-size: 0.9rem;
-    padding: 0 0.5rem;
-    max-width: 95%;
+    margin-bottom: 0.4rem;
   }
   
-  .definition {
-    padding: 2.5rem 0.75rem;
-  }
-  
-  .definition-img img {
-    width: 220px;
-    margin-bottom: 1rem;
-  }
-  
-  .definition-text {
-    max-width: 95%;
-  }
-  
-  .definition-text p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  
-  .consultation {
-    margin: 2.5rem auto;
-    padding: 0 0.75rem;
-  }
-  
-  .consultation-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 0.75rem;
-    max-width: 95%;
-  }
-  
-  .consultation-grid div {
-    padding: 0.8rem 1rem;
-    min-height: 80px;
+  .contact-info {
     font-size: 0.9rem;
-  }
-  
-  #button {
-    padding: 2rem 1rem;
-    margin: 3rem auto;
-  }
-  
-  #rendezvous {
-    font-size: 1rem;
-    padding: 12px 16px;
+    line-height: 1.6;
   }
   
   footer {
@@ -561,81 +490,43 @@ footer a {
     gap: 0.75rem !important;
   }
   
-  h1 {
+  .contact-section {
+    padding: 1.5rem 0.75rem 2.5rem;
+  }
+  
+  .contact-section h1 {
     font-size: 2.2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
   }
   
-  h2 {
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
+  .contact-card {
+    max-width: 98%;
+    padding: 1.25rem;
+    border-radius: 10px;
   }
   
-  .intro {
-    max-width: 100%;
-    margin: 1rem auto;
-    padding: 0 0.75rem;
+  .contact-row {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
   
-  .intro p {
-    font-size: 0.9rem;
+  .contact-row:last-child {
+    border-bottom: none;
+  }
+  
+  .contact-label {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+  
+  .contact-info {
+    font-size: 0.85rem;
     line-height: 1.5;
   }
   
-  blockquote {
-    margin: 1.5rem auto;
-    font-size: 0.85rem;
-    padding: 0 0.5rem;
-    max-width: 100%;
-  }
-  
-  .definition {
-    padding: 2rem 0.5rem;
-  }
-  
-  .definition-img img {
-    width: 180px;
-    border-radius: 8px;
-  }
-  
-  .definition-text {
-    max-width: 100%;
-    margin: 0.5rem;
-  }
-  
-  .definition-text p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  
-  .consultation {
-    margin: 2rem auto;
-    padding: 0 0.5rem;
-  }
-  
-  .consultation-grid {
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
-    max-width: 100%;
-  }
-  
-  .consultation-grid div {
-    padding: 0.75rem;
-    min-height: 70px;
-    font-size: 0.85rem;
-  }
-  
-  #button {
-    padding: 1.5rem 0.5rem;
-    margin: 2rem auto;
-  }
-  
-  #rendezvous {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    font-size: 0.9rem;
-    padding: 10px 12px;
+  .contact-info br {
+    margin-bottom: 0.2rem;
   }
   
   footer {
@@ -663,24 +554,17 @@ footer a {
 
 /* === RESPONSIVE LANDSCAPE MOBILE === */
 @media (max-width: 991px) and (orientation: landscape) {
-  h1 {
+  .contact-section h1 {
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   
-  h2 {
-    font-size: 1.4rem;
+  .contact-section {
+    padding: 1.5rem 1rem 2.5rem;
   }
   
-  blockquote {
-    font-size: 0.9rem;
-  }
-  
-  .definition {
-    padding: 2rem 1rem;
-  }
-  
-  .consultation-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .contact-card {
+    max-width: 80%;
   }
 }
 

@@ -365,38 +365,31 @@ footer a {
   color: #592c2c;
 }
 
-/* === MEDIA QUERIES RESPONSIVE POUR CONSULTATIONS.HTML === */
+/* === MEDIA QUERIES RESPONSIVE POUR CONTACTS.HTML === */
 
 /* === CORRECTIONS GÉNÉRALES === */
 
-
+/* Menu en haut à droite, plus resserré */
 
 
 /* === RESPONSIVE POUR TRÈS GRANDS ÉCRANS (> 1400px) === */
 @media (min-width: 1400px) {
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 6rem;
   }
   
-  .tarifs-content {
-    max-width: 1200px;
-    margin: 0 auto;
+  .contact-card {
+    max-width: 900px;
+    padding: 3rem;
   }
   
-  .tarifs-content img {
-    width: 350px;
+  .contact-label {
+    min-width: 180px;
+    font-size: 1.1rem;
   }
   
-  .tarifs-text {
-    max-width: 500px;
-  }
-  
-  .deroulement {
-    max-width: 1000px;
-  }
-  
-  .contre-grid {
-    max-width: 1100px;
+  .contact-info {
+    font-size: 1.1rem;
   }
 }
 
@@ -412,131 +405,88 @@ footer a {
     gap: 1.5rem !important;
   }
   
-  .rendezvous {
-    padding: 2rem 1rem 5rem;
+  .contact-section {
+    padding: 2.5rem 1rem 4rem;
   }
   
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 4rem;
+    margin-bottom: 2.5rem;
   }
   
-  .rendezvous .subtitle {
-    font-size: 1.3rem;
+  .contact-card {
+    max-width: 650px;
+    padding: 1.8rem;
   }
   
-  .contact-btn {
-    width: 260px;
+  .contact-label {
+    min-width: 130px;
     font-size: 0.95rem;
   }
   
-  .tarifs {
-    padding: 5rem 3rem;
+  .contact-info {
+    font-size: 0.95rem;
   }
   
-  .tarifs-content img {
-    width: 280px;
-  }
-  
-  .tarifs-text {
-    max-width: 380px;
-  }
-  
-  .deroulement {
-    padding: 2.5rem 1.5rem;
-  }
-  
-  .contre {
-    padding: 5rem 3rem;
-  }
-  
-  .contre-grid {
-    max-width: 85%;
-    gap: 0.8rem;
-  }
-  
-  .horaires {
-    padding: 2.5rem 1rem;
+  .contact-row {
+    padding: 0.9rem 0;
   }
 }
 
 /* === RESPONSIVE POUR PETITES TABLETTES ET MOBILES (< 991px) === */
 @media (max-width: 991px) {
   #menu {
-    flex-direction: column;
+    flex-direction: row !important;
     align-items: flex-start;
     gap: 1.5rem !important;
     padding: 1rem;
+    justify-content: space-between !important;
   }
   
   #mots {
-    width: 100%;
+    width: auto !important;
     flex-direction: column;
-    gap: 1rem !important;
-    align-items: flex-start;
+    gap: 0.5rem !important;
+    align-items: flex-end !important;
     justify-content: flex-start !important;
   }
   
   #mots a {
-    padding: 0.5rem 0;
-    width: 100%;
+    padding: 0.25rem 0;
+    width: auto !important;
+    text-align: right;
   }
   
-  .rendezvous {
-    padding: 2rem 1rem 4rem;
+  .contact-section {
+    padding: 2rem 1rem 3.5rem;
   }
   
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 3.5rem;
-  }
-  
-  .rendezvous .subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .contact-buttons {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .contact-btn {
-    width: 100%;
-  }
-  
-  .tarifs {
-    padding: 4rem 2rem;
-  }
-  
-  .tarifs-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .tarifs-content img {
-    width: 300px;
     margin-bottom: 2rem;
   }
   
-  .tarifs-text {
+  .contact-card {
     max-width: 90%;
-    text-align: center;
+    padding: 1.5rem;
   }
   
-  .tarifs-text ul {
-    text-align: left;
+  .contact-row {
+    flex-direction: column;
+    padding: 0.8rem 0;
   }
   
-  .deroulement {
-    padding: 2.5rem 1.5rem;
+  .contact-label {
+    margin-bottom: 0.5rem;
+    min-width: 100%;
   }
   
-  .contre {
+  .contact-info {
+    width: 100%;
+  }
+
+  .contre  {
     padding: 4rem 2rem;
-  }
-  
-  .contre-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    max-width: 90%;
   }
 }
 
@@ -556,106 +506,33 @@ footer a {
     font-size: 15px;
   }
   
-  .rendezvous {
-    padding: 1.5rem 1rem 3rem;
+  .contact-section {
+    padding: 2rem 1rem 3rem;
   }
   
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 2.8rem;
-    margin: 0.5rem;
+    margin-bottom: 1.8rem;
   }
   
-  .rendezvous .subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-buttons {
-    max-width: 100%;
-  }
-  
-  .contact-btn {
-    width: 90%;
-    font-size: 0.9rem;
-    padding: 0.7rem 1rem;
-  }
-  
-  .tarifs {
-    padding: 3rem 1.5rem;
-  }
-  
-  .tarifs h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  
-  .tarifs-content img {
-    width: 240px;
-  }
-  
-  .tarifs-text {
+  .contact-card {
     max-width: 95%;
+    padding: 1.5rem;
+    border-radius: 12px;
   }
   
-  .tarifs-text ul li {
-    font-size: 0.95rem;
+  .contact-row {
+    padding: 0.75rem 0;
   }
   
-  .tarifs-text .reglement {
-    font-size: 0.95rem;
-  }
-  
-  .deroulement {
-    padding: 2rem 1rem;
-  }
-  
-  .deroulement h2 {
-    font-size: 1.8rem;
-  }
-  
-  .etape {
-    margin-bottom: 1.5rem;
-  }
-  
-  .etape-content h3 {
-    font-size: 1.1rem;
-  }
-  
-  .etape-content p,
-  .etape-content .note {
+  .contact-label {
     font-size: 0.9rem;
+    margin-bottom: 0.4rem;
   }
   
-  .contre {
-    padding: 3rem 1.5rem;
-  }
-  
-  .contre h2 {
-    font-size: 1.8rem;
-  }
-  
-  .contre-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    max-width: 95%;
-    gap: 0.75rem;
-  }
-  
-  .contre-grid div {
-    padding: 0.8rem 1rem;
-    min-height: 85px;
+  .contact-info {
     font-size: 0.9rem;
-  }
-  
-  .horaires {
-    padding: 2rem 1rem;
-  }
-  
-  .horaires h2 {
-    font-size: 1.8rem;
-  }
-  
-  .horaires p {
-    font-size: 0.95rem;
+    line-height: 1.6;
   }
   
   footer {
@@ -666,6 +543,10 @@ footer a {
   .mentions-content {
     padding: 1.5rem;
     width: 95%;
+  }
+
+  .contre  {
+    padding: 4rem 2rem;
   }
 }
 
@@ -686,121 +567,43 @@ footer a {
     gap: 0.75rem !important;
   }
   
-  .rendezvous {
+  .contact-section {
     padding: 1.5rem 0.75rem 2.5rem;
   }
   
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 2.2rem;
-    margin: 0.5rem;
-  }
-  
-  .rendezvous .subtitle {
-    font-size: 1rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  .contact-btn {
-    width: 95%;
-    font-size: 0.85rem;
-    padding: 0.65rem 0.8rem;
-  }
-  
-  .tarifs {
-    padding: 2.5rem 1rem;
-  }
-  
-  .tarifs h2 {
-    font-size: 1.6rem;
     margin-bottom: 1.5rem;
   }
   
-  .tarifs-content img {
-    width: 200px;
-    border-radius: 8px;
+  .contact-card {
+    max-width: 98%;
+    padding: 1.25rem;
+    border-radius: 10px;
   }
   
-  .tarifs-text {
-    max-width: 100%;
+  .contact-row {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
   
-  .tarifs-text ul li {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
+  .contact-row:last-child {
+    border-bottom: none;
   }
   
-  .tarifs-text span {
+  .contact-label {
     font-size: 0.85rem;
-  }
-  
-  .tarifs-text .reglement {
-    font-size: 0.9rem;
-  }
-  
-  .deroulement {
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .deroulement h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .etape {
-    margin-bottom: 1.2rem;
-  }
-  
-  .point {
-    width: 8px;
-    height: 8px;
-    margin-right: 0.75rem;
-    margin-top: 0.4rem;
-  }
-  
-  .etape-content h3 {
-    font-size: 1rem;
     margin-bottom: 0.4rem;
+    font-weight: 500;
   }
   
-  .etape-content p,
-  .etape-content .note {
+  .contact-info {
     font-size: 0.85rem;
     line-height: 1.5;
   }
   
-  .contre {
-    padding: 2.5rem 1rem;
-  }
-  
-  .contre h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contre-grid {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    gap: 0.6rem;
-  }
-  
-  .contre-grid div {
-    padding: 0.75rem;
-    min-height: 75px;
-    font-size: 0.85rem;
-  }
-  
-  .horaires {
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .horaires h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  .horaires p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
+  .contact-info br {
+    margin-bottom: 0.2rem;
   }
   
   footer {
@@ -824,32 +627,25 @@ footer a {
     top: 8px;
     right: 12px;
   }
+
+  .contre  {
+    padding: 4rem 2rem;
+  }
 }
 
 /* === RESPONSIVE LANDSCAPE MOBILE === */
 @media (max-width: 991px) and (orientation: landscape) {
-  .rendezvous h1 {
+  .contact-section h1 {
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   
-  .rendezvous .subtitle {
-    font-size: 1rem;
-  }
-  
-  .rendezvous {
+  .contact-section {
     padding: 1.5rem 1rem 2.5rem;
   }
   
-  .tarifs {
-    padding: 2rem 1.5rem;
-  }
-  
-  .contre {
-    padding: 2rem 1.5rem;
-  }
-  
-  .contre-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .contact-card {
+    max-width: 80%;
   }
 }
 

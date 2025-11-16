@@ -29,6 +29,7 @@ header {
     background-image: url("../src/img/LOCAL2.JPG");
     background-size: cover;
     background-position: center;
+    
 }
 
 /* === MENU === */
@@ -81,16 +82,16 @@ header {
 
 /* === TITLE === */
 
+/* === TITLE === */
 #title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
     text-align: center;
     color: var(--clr-creme);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-
     user-select: none;
 }
 

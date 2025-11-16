@@ -287,3 +287,405 @@ footer a {
 .close-mentions:hover {
   color: #592c2c;
 }
+
+/* === MEDIA QUERIES RESPONSIVE POUR REFLEXO.HTML === */
+
+/* === RESPONSIVE POUR TRÈS GRANDS ÉCRANS (> 1400px) === */
+@media (min-width: 1400px) {
+  .intro {
+    max-width: 800px;
+  }
+  
+  blockquote {
+    max-width: 1100px;
+    font-size: 1.3rem;
+  }
+  
+  .definition-text {
+    max-width: 600px;
+  }
+  
+  .consultation-grid {
+    max-width: 1100px;
+  }
+}
+
+/* === RESPONSIVE POUR TABLETTES (768px - 1023px) === */
+@media (max-width: 1023px) {
+  #menu {
+    padding: 1rem 1.5rem;
+    gap: 1.5rem !important;
+  }
+  
+  #mots {
+    font-size: 16px;
+    gap: 1.5rem !important;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    max-width: 85%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  blockquote {
+    margin: 3rem auto;
+    font-size: 1rem;
+    max-width: 85%;
+  }
+  
+  .definition {
+    padding: 4rem 1.5rem;
+  }
+  
+  .definition-img img {
+    width: 250px;
+  }
+  
+  .definition-text {
+    max-width: 450px;
+  }
+  
+  .consultation {
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  .consultation-grid {
+    max-width: 85%;
+    gap: 0.8rem;
+  }
+  
+  #button {
+    padding: 3rem;
+  }
+}
+
+/* === RESPONSIVE POUR PETITES TABLETTES ET MOBILES (< 991px) === */
+@media (max-width: 991px) {
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem !important;
+    padding: 1rem;
+  }
+  
+  #mots {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem !important;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+  }
+  
+  #mots a {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .intro {
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  blockquote {
+    margin: 2.5rem auto;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .definition {
+    flex-direction: column;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .definition-img img {
+    width: 280px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .definition-text {
+    max-width: 90%;
+  }
+  
+  .consultation {
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  .consultation-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 90%;
+  }
+  
+  #button {
+    padding: 2rem;
+  }
+}
+
+/* === RESPONSIVE POUR MOBILES (< 768px) === */
+@media (max-width: 767px) {
+  #menu {
+    padding: 0.75rem;
+    gap: 1rem !important;
+  }
+  
+  #menu img {
+    width: 60px;
+    margin: 2%;
+  }
+  
+  #mots {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .intro {
+    max-width: 95%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+  
+  .intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  blockquote {
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    max-width: 95%;
+  }
+  
+  .definition {
+    padding: 2.5rem 0.75rem;
+  }
+  
+  .definition-img img {
+    width: 220px;
+    margin-bottom: 1rem;
+  }
+  
+  .definition-text {
+    max-width: 95%;
+  }
+  
+  .definition-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .consultation {
+    margin: 2.5rem auto;
+    padding: 0 0.75rem;
+  }
+  
+  .consultation-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    max-width: 95%;
+  }
+  
+  .consultation-grid div {
+    padding: 0.8rem 1rem;
+    min-height: 80px;
+    font-size: 0.9rem;
+  }
+  
+  #button {
+    padding: 2rem 1rem;
+    margin: 3rem auto;
+  }
+  
+  #rendezvous {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+  
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .mentions-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+}
+
+/* === RESPONSIVE POUR PETITS MOBILES (< 480px) === */
+@media (max-width: 479px) {
+  #menu {
+    padding: 0.5rem;
+    gap: 0.75rem !important;
+  }
+  
+  #menu img {
+    width: 50px;
+    margin: 1%;
+  }
+  
+  #mots {
+    font-size: 14px;
+    gap: 0.75rem !important;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .intro {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0 0.75rem;
+  }
+  
+  .intro p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  blockquote {
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+  
+  .definition {
+    padding: 2rem 0.5rem;
+  }
+  
+  .definition-img img {
+    width: 180px;
+    border-radius: 8px;
+  }
+  
+  .definition-text {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+  
+  .definition-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .consultation {
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+  }
+  
+  .consultation-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    max-width: 100%;
+  }
+  
+  .consultation-grid div {
+    padding: 0.75rem;
+    min-height: 70px;
+    font-size: 0.85rem;
+  }
+  
+  #button {
+    padding: 1.5rem 0.5rem;
+    margin: 2rem auto;
+  }
+  
+  #rendezvous {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+  
+  footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .mentions-content {
+    padding: 1.25rem;
+    font-size: 14px;
+    width: 98%;
+  }
+  
+  .mentions-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .close-mentions {
+    font-size: 1.5rem;
+    top: 8px;
+    right: 12px;
+  }
+}
+
+/* === RESPONSIVE LANDSCAPE MOBILE === */
+@media (max-width: 991px) and (orientation: landscape) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  blockquote {
+    font-size: 0.9rem;
+  }
+  
+  .definition {
+    padding: 2rem 1rem;
+  }
+  
+  .consultation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === CORRECTION OVERFLOW === */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}

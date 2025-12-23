@@ -87,12 +87,22 @@
 .mentions-content h1, .mentions-content h2 {
     color: var(--clr-black);
     margin-bottom: 8px;
+    text-align: center;
 }
-
+.mentions-content h1 {
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+.mentions-content h2 {
+    font-size: 1.05rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
 .mentions-content p, .mentions-content li {
     color: #222;
-    line-height: 1.5;
-    margin-bottom: 8px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .points {
@@ -101,12 +111,18 @@
 }
 
 .close-mentions {
+    font-family: "Poppins", sans-serif;
     position: absolute;
     right: 28px;
     top: 18px;
     text-decoration: none;
-    font-size: 28px;
-    color: var(--clr-black);
+    font-size: 2rem;
+    color: #7c3f3f;
+    font-weight: normal;
+}
+
+.close-mentions:hover {
+    color: #592c2c;
 }
 
 @media (max-width: 600px) {

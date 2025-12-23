@@ -100,16 +100,18 @@ blockquote {
 }
 
 h1 {
-  font-family: "Imbue";
+  font-family: "Poppins", sans-serif;
   color: var(--clr-red);
   font-size: 5rem;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 h2 {
-  font-family: "Imbue";
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 blockquote {

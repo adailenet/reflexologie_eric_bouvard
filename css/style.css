@@ -65,7 +65,7 @@ header {
     align-items: center;
     font-weight: 500;
     font-size: var(--font-nav);
-    color: var(--clr-creme);
+    color: var(--clr-red);
 }
 
 #mots a {
@@ -229,6 +229,11 @@ footer a {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   text-align: left;
   animation: fadeIn 0.3s ease;
+}
+
+.points {
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 /* Bouton croix */
